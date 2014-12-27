@@ -9,7 +9,7 @@ class NewsletterServiceProvider extends ServiceProvider {
 	 *
 	 * @var bool
 	 */
-	protected $defer = true;
+	protected $defer = false;
 
 	/**
 	 * Bootstrap the application events.
@@ -19,6 +19,8 @@ class NewsletterServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('pnd/newsletter');
+
+        include __DIR__.'/../../routes.php';
 	}
 
 	/**
