@@ -2,8 +2,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class NewsletterServiceProvider extends ServiceProvider {
-
+class NewsletterServiceProvider extends ServiceProvider
+{
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -42,5 +42,4 @@ class NewsletterServiceProvider extends ServiceProvider {
     {
         return array();
     }
-
 }
